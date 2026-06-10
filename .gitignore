@@ -1,0 +1,95 @@
+```gitignore
+# macOS
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Metro
+.metro-health-check*
+
+# React Native
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/app/debug/
+android/app/release/
+android/.cxx/
+
+# iOS
+ios/build/
+ios/Pods/
+ios/.xcode.env.local
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# CocoaPods
+Podfile.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Expo
+.expo/
+.expo-shared/
+
+# Coverage
+coverage/
+
+# Bundle files
+*.bundle
+
+# Cache
+.cache/
+npm-cache/
+.yarn/
+
+# TypeScript
+*.tsbuildinfo
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Build artifacts
+dist/
+build/
+
+# Misc
+*.orig
+```
