@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "TeacherAttendance",
+    "slug": "teacherattendance-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "teacherattendance",
+    "newArchEnabled": true,
+
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.teacherattendance.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "TeacherAttendance uses your camera to scan QR codes for attendance and capture your selfie to verify your presence.",
+        "NSLocationWhenInUseUsageDescription": "TeacherAttendance uses your location to verify you are within your school premises when marking attendance.",
+        "NSPhotoLibraryUsageDescription": "TeacherAttendance may access your photo library to select a profile photo.",
+        "UIBackgroundModes": []
+      }
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.teacherattendance.app",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_WIFI_STATE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET"
+      ]
+    },
+
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "TeacherAttendance uses your camera to scan QR codes and take selfies for attendance verification."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "TeacherAttendance checks your location to verify you are within your school premises."
+        }
+      ]
+    ],
+
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
